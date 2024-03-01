@@ -18,6 +18,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/quem-somos', function () {
+    return view('quem-somos');
+})->name('quem-somos');
+
+Route::get('/contato', function () {
+    return view('contato');
+})->name('contato');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
