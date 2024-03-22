@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContatoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,7 @@ Route::get('/contato', function () {
     return view('contato');
 })->name('contato');
 
+Route::post('/enviar-mensagem', [ContatoController::class, 'enviarMensagem'])->name('enviar.mensagem');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
