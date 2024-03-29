@@ -88,12 +88,25 @@ color: red;
 
         }
     </style>
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 <body>
 
-<header>
-    <h1>Contato - HastyDev</h1>
-</header>
+ 
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            @include('layouts.navigation')
+
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white dark:bg-gray-800 shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
+
 <div class="container">
     <p>Tem alguma dúvida ou feedback para nós? Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
     <!-- Exibindo mensagens de erro -->
@@ -119,7 +132,7 @@ color: red;
 @endif
 </div>
 <footer>
-    <p>&copy; 2024 HastyDev. Todos os direitos reservados.</p>
+   @include('layouts.footer')
 </footer>
 </body>
 </html>
