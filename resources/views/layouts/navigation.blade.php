@@ -16,8 +16,8 @@
     </x-nav-link>
 
   
-    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
-        {{ __('Home') }}
+    <x-nav-link :href="route('Vestibulinho')" :active="request()->routeIs('Vestibulinho')">
+        {{ __('Vestibulinho') }}
     </x-nav-link>
 
     <x-nav-link :href="route('quem-somos')" :active="request()->routeIs('quem-somos')">

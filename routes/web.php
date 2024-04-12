@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/Vestibulinho', function () {
+    return view('Vestibulinho');
+})->name('Vestibulinho');
 
 Route::get('/quem-somos', function () {
     return view('quem-somos');

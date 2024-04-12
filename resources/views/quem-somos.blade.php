@@ -167,6 +167,8 @@ text-align: center;
             <p>Assim como nos vestibulares, os alunos das ETECs se destacam no mercado de trabalho. A média é que cerca de 70% formados consigam um emprego na área e vale lembrar que os salários de quem possui curso técnico são geralmente mais altos do que das pessoas que têm apenas o ensino médio.</p>
         </div>
     </main>
-
+    <footer>
+   @include('layouts.footer')
+</footer>
 </body>
 </html>
