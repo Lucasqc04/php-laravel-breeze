@@ -22,6 +22,10 @@ Route::get('/Vestibulinho', function () {
     return view('Vestibulinho');
 })->name('Vestibulinho');
 
+Route::get('/calendarios', function () {
+    return view('calendarios');
+})->name('calendarios');
+
 Route::get('/quem-somos', function () {
     return view('quem-somos');
 })->name('quem-somos');

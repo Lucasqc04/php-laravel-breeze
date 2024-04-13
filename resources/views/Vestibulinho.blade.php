@@ -6,16 +6,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HastyDev - Plataforma para Desenvolvedores</title>
-    <style>
-  
-    </style>
+ 
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 <body>
+
+ 
 <style>
-        /* Estilos para os textos */
+ 
         body {
             font-family: 'Arial', sans-serif;
             color: #333;
@@ -31,19 +31,19 @@
             margin-bottom: 1.25rem;
         }
 
-        /* Estilizando o fundo */
+ 
         .dark-mode body {
             background-color: #1a202c;
             color: #cbd5e0;
         }
 
-        /* Estilizando os cabeçalhos */
+    
         header {
             background-color: #ffffff;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        /* Estilizando os botões */
+ 
         .btn {
             display: inline-block;
             background-color: #4caf50;
@@ -58,26 +58,25 @@
             background-color: #45a049;
         }
 
-        /* Estilizando os títulos */
+    
         .title {
             color: #2d3748;
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-
-        /* Estilizando os subtítulos */
+ 
         .subtitle {
             color: #4a5568;
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
 
-        /* Estilizando as seções */
+       
         .section {
             margin-bottom: 2rem;
         }
 
-        /* Estilizando as caixas de destaque */
+ 
         .highlight-box {
             background-color: #f0fff4;
             border-left: 4px solid #38a169;
@@ -85,21 +84,21 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Estilizando a área de inscrição */
+         
         .registration-area {
             background-color: #e2e8f0;
             padding: 2rem;
             border-radius: 0.5rem;
         }
 
-        /* Estilizando os ícones */
+        
         .icon {
             font-size: 2rem;
             margin-right: 0.5rem;
             vertical-align: middle;
         }
 
-        /* Animação de crescimento */
+       
         .grow {
             transition: transform 0.2s ease-in-out;
         }
@@ -108,7 +107,7 @@
             transform: scale(1.05);
         }
 
-        /* Estilos personalizados para o botão de inscrição */
+         
         .inscription-btn {
             outline: none;
             cursor: pointer;
@@ -165,7 +164,7 @@
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.navigation')
 
-            <!-- Page Heading -->
+            
             @if (isset($header))
                 <header class="bg-white dark:bg-gray-800 shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -174,9 +173,9 @@
                 </header>
             @endif
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <!-- Heading -->
+ 
         <div class="container mx-auto px-4">
-        <!-- Seção de informações sobre o Vestibulinho -->
+        
         <section class="section">
             <h2 class="title">O que é o Vestibulinho?</h2>
             <p class="mb-4">O Vestibulinho das Escolas Técnicas Estaduais (ETECs) é um processo seletivo semestral realizado pelo Centro Paula Souza, que oferece cursos técnicos gratuitos em diversas áreas do conhecimento.</p>
@@ -202,7 +201,7 @@
     </ul>
 </section>
 
-        <!-- Área de Inscrição -->
+    
         <section class="section">
             <div class="registration-area">
                 <h2 class="title text-center mb-4">Inscreva-se Agora!</h2>
@@ -213,7 +212,10 @@
 
             </div>
         </section>
-    
+        <h1>Visualizador de PDF Interativo</h1>
+
+  
+
     </div>
 
     <footer>
