@@ -88,7 +88,7 @@
     </div>
 
     <div id="fates" class="iframe-container">
-        <h1>Fates Da Zona Leste</h1>
+        <h1>Fatec Da Zona Leste</h1>
         <iframe src="/pdf/calendario-FatecZonaLeste.pdf#toolbar=0"></iframe>
     </div>
 
