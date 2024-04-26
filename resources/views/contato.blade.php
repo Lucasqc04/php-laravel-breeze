@@ -197,6 +197,7 @@
         @csrf
         <input type="text" name="nome" placeholder="Seu Nome" required>
         <input type="email" name="email" placeholder="Seu E-mail" required>
+          <input type="text" name="telefone" placeholder="Seu Telefone">
         <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
         <button class="cta">
   <span>Enviar Feedback</span>
@@ -208,11 +209,15 @@
 
     </form>
 
-    @if(session('error'))
+    @if($errors->any())
     <div class="alert-error">
-        <div class="feedback">{{ session('error') }}</div>
+        <div class="feedback">
+            @foreach ($errors->all() as $error)
+                {{ $error }}
+            @endforeach
+        </div>
     </div>
-    @endif
+@endif
 
     @if(session('success'))
     <div class="alert-success">
